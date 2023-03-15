@@ -6,9 +6,10 @@
 #define MYLIST_H
 
 #include <iostream>     /* cout, endl */
-#include <stdlib.h>     /* srand, rand, atoi */
+#include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
-// you can add libraries if you need them, but you shouldn't
+// you can add libraries here if you need them, but you shouldn't
+
 
 // DO NOT MODIFY THESE DEFINES
 #define RMIN 1
@@ -34,7 +35,7 @@ public:
      * TODO write your display methods here
      * and erase this comment
      */
-
+     
 private:
     // these are the only attributes allowed
     // DO NOT ADD OR MODIFY THEM
