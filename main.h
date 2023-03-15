@@ -11,6 +11,8 @@
  ***********************************/
 
 #include <iostream>     /* cout, endl */
+#include <stdlib.h>     /* srand, rand */
+#include <time.h>       /* time */
 #include "mylist.h"
 
 #define LISTSIZE 10
