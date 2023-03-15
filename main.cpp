@@ -11,12 +11,14 @@ int main(int argc, char** argv) {
      * UNCOMMENT THINGS AS YOU COMPLETE
      * THE FUNCTIONALITY OF YOUR LIST OBJECT
      ***********************************/
+    srand(time(NULL));  // call only once per application
 
     /* This will create a "list" of size LISTSIZE
      * and initialize it to all zeros */
     cout << "create and initialize mylist" << endl;
     MyList mylist(LISTSIZE);
     //mylist.printArray();
+    //cout << "The length of the array is: " << mylist.getLength() << endl;
     cout << endl;
 
     /* This will set the list to all 50 */
@@ -55,18 +57,19 @@ int main(int argc, char** argv) {
 
     /* These next two sets will succeed and set the 1st and last
      * elements to 1000 and 2000 respectively */
+    
     //if(mylist.setElement(1000, 0)){
     //    cout << "Element Set" << endl;
     //} else {
     //    cout << "Element NOT Set" << endl;
     //}
-    //if(mylist.setElement(2000, LISTSIZE-1)){
+    //if(mylist.setElement(2000, mylist.getLength()-1)){
     //    cout << "Element Set" << endl;
     //} else {
     //    cout << "Element NOT Set" << endl;
     //}
     //mylist.printArray();
-    cout << endl;
+    //cout << endl;
 
     /* These next two sets will fail and leave the array unmodified */
     //if(mylist.setElement(9999, -1)){
@@ -74,25 +77,26 @@ int main(int argc, char** argv) {
     //} else {
     //    cout << "Element NOT Set" << endl;
     //}
-    //if(mylist.setElement(9999, LISTSIZE)){
+    //if(mylist.setElement(9999, mylist.getLength())){
     //    cout << "Element Set" << endl;
     //} else {
     //    cout << "Element NOT Set" << endl;
     //}
     //mylist.printArray();
-    cout << endl;
+    //cout << endl;
 
     /* print out the array using getElement() */
     cout << "printing the array element by element" << endl;
-    //for(int i=0; i<LISTSIZE; i++){
-    //    cout << mylist.getElement(i) << endl;
-    //}
+    //        int len = mylist.getLength();
+    //        for(int i=0; i<len; i++){
+    //            cout << mylist.getElement(i) << endl;
+    //        }
     cout << endl;
 
     /* this will fail and return 0 */
-    cout << "attempting to get element 4000" << endl;
-    //cout << mylist.getElement(4000) << endl;
-    cout << endl;
+    //cout << "attempting to get element 4000" << endl;
+    //        cout << mylist.getElement(4000) << endl;
+    //cout << endl;
     
     return 0;
 }
